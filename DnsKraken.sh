@@ -122,8 +122,8 @@ Help(){
 Verifica(){
 	#Verifica as Dependencias
 	if ! [[ -e /usr/bin/host ]];then
-		echo "\n${BLUE}Dependencia: host${END}"
-		echo "${CIANO}sudo apt install host${END}\n"
+		echo -e "\n${BLUE}Dependencia: host${END}"
+		echo -e "${CIANO}sudo apt install host${END}\n"
 		exit 1
 	elif ! [[ -e /usr/bin/whois ]];then
 		echo -e "\n${BLUE}Dependencia: whois${END}"
